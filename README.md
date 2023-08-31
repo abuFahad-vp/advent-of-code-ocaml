@@ -3,5 +3,5 @@
 
 ### usage: 
     cd 2022
-    ./run day1
+    ./run.sh day1
 
