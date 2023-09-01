@@ -1,10 +1,10 @@
 open Containers
 
-let stacks1 = "inputs/day5.txt" |> open_in |> IO.read_lines_l |> List.map (
+let stacks () = "inputs/day5.txt" |> open_in |> IO.read_lines_l |> List.map (
   fun x -> x |> String.rev |> String.to_seq |> Stack.of_seq) |> Array.of_list;;
 
-let stacks2 = "inputs/day5.txt" |> open_in |> IO.read_lines_l |> List.map (
-  fun x -> x |> String.rev |> String.to_seq |> Stack.of_seq) |> Array.of_list;;
+let stacks1 = stacks ();;
+let stacks2 = stacks ();;
 
 let commands = "inputs/day5_.txt" |> open_in |> IO.read_lines_l |> List.map (
   fun x -> 
