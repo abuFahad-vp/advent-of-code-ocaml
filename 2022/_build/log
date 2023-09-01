@@ -3,7 +3,7 @@
 # Shared cache: disabled
 # Workspace root: /home/abu/ocaml_tut/advent/2022
 # Auto-detected concurrency: 2
-$ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_cc95d1_output
+$ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_b881b4_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
