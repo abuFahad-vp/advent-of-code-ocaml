@@ -5,3 +5,6 @@
     cd 2022
     ./run.sh day1
 
+
+#### note: Some of the input files are altered for easyness
+
