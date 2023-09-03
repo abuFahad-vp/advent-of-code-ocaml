@@ -7,21 +7,21 @@ type system =
 
 exception Break
   
-let create(cu:system) name size isdir = 
-  let obj  = if isdir then Directory(name,ref [ParentDir(cu)]) 
+let create (current:system) name size isdir = 
+  let obj  = if isdir then Directory(name,ref [ParentDir(current)]) 
   else File(size, name) in
-  match cu with
+  match current with
   | Directory(_,sub_r) -> sub_r := !sub_r @ [obj]
   | _ -> ()
 
-let change_dir (cu:system ref) name = 
-  match !cu with
+let change_dir (current:system ref) name = 
+  match !current with
   | Directory(_,sub_r) -> (
       List.iter (fun x -> 
         try
           match x with
-          | ParentDir(dir) -> if name = ".." then (cu := dir;raise Break)
-          | Directory(n,_) -> if n = name then (cu := x; raise Break)
+          | ParentDir(dir) -> if name = ".." then (current := dir;raise Break)
+          | Directory(n,_) -> if n = name then (current := x; raise Break)
           | _ -> ()
         with Break -> ()
         ) !sub_r)
