@@ -59,11 +59,11 @@ let root = Directory("/", ref [])
 let current = ref root;;
 
 build root current;;
-size_of root values;;
+let root_size = size_of root values;;
 
 let ans = List.fold_left (fun (p1,p2) b -> 
   let x = if b <= 100000 then p1 + b else p1 in
-  let required = 30000000 - (70000000 - (List.hd !values)) in
+  let required = 30000000 - (70000000 - root_size) in
   let y = if b >= required && b < p2 then b else p2 in
   (x,y)
 ) (0,max_int) !values;;
