@@ -8,7 +8,7 @@
 
 
 ### References:-
-- [](https://github.com/hellopatrick/xmas/tree/main)
+- https://github.com/hellopatrick/xmas/tree/main
 
 ##### notes: Some of the input files are altered for easyness
 
