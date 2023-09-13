@@ -6,5 +6,9 @@
     ./run.sh day1
 
 
-#### notes: 
-    #### Some of the input files are altered for easyness
+### References:-
+    https://github.com/hellopatrick/xmas/tree/main
+
+##### notes: Some of the input files are altered for easyness
+
+
