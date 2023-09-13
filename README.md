@@ -1,3 +1,4 @@
+
 # advent-of-code-ocaml
 ## Solutions to advent of code in ocaml
 
@@ -7,8 +8,7 @@
 
 
 ### References:-
-    https://github.com/hellopatrick/xmas/tree/main
+- (https://github.com/hellopatrick/xmas/tree/main)
 
 ##### notes: Some of the input files are altered for easyness
-
 
