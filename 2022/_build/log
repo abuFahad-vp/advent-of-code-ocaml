@@ -1,9 +1,9 @@
-# dune exec ./day9.exe
+# dune exec ./day10.exe
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/abu/ocaml_tut/advent/2022
 # Auto-detected concurrency: 2
-$ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_b93c9d_output
+$ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_d8d1bf_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -112,6 +112,5 @@ $ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_b93c9d_output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /home/abu/.opam/default/bin/ocamldep.opt -modules -impl day9.ml) > _build/default/.day9.eobjs/dune__exe__Day9.impl.d
-$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .day9.eobjs/byte -I .day9.eobjs/native -I /home/abu/.opam/default/lib/containers -I /home/abu/.opam/default/lib/containers/monomorphic -I /home/abu/.opam/default/lib/either -I /home/abu/.opam/default/lib/ocaml/str -I /home/abu/.opam/default/lib/ocaml/unix -I /home/abu/.opam/default/lib/seq -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .day9.eobjs/native/dune__exe__Day9.cmx -c -impl day9.ml)
-$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o day9.exe /home/abu/.opam/default/lib/ocaml/unix/unix.cmxa /home/abu/.opam/default/lib/either/either.cmxa /home/abu/.opam/default/lib/containers/monomorphic/containers_monomorphic.cmxa /home/abu/.opam/default/lib/containers/containers.cmxa /home/abu/.opam/default/lib/ocaml/str/str.cmxa .day9.eobjs/native/dune__exe.cmx .day9.eobjs/native/dune__exe__Day9.cmx)
+$ (cd _build/default && /home/abu/.opam/default/bin/ocamldep.opt -modules -impl day10.ml) > _build/default/.day10.eobjs/dune__exe__Day10.impl.d
+$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .day10.eobjs/byte -I .day10.eobjs/native -I /home/abu/.opam/default/lib/containers -I /home/abu/.opam/default/lib/containers/monomorphic -I /home/abu/.opam/default/lib/either -I /home/abu/.opam/default/lib/ocaml/str -I /home/abu/.opam/default/lib/ocaml/unix -I /home/abu/.opam/default/lib/seq -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .day10.eobjs/native/dune__exe__Day10.cmx -c -impl day10.ml)
