@@ -1,7 +1,5 @@
 open Containers
 
-let input = "inputs/day10.txt" |> open_in |> IO.read_lines_l
-
 let signals =
   let _, signals =
     List.fold_left (fun (sum, acc) line ->
@@ -11,17 +9,14 @@ let signals =
           let sum' = sum + (int_of_string n) in
           (sum', sum' :: sum :: acc)
       | _ -> failwith "Parsing Error"
-    ) (1, [1;1]) input
+    ) (1, [1]) ("inputs/day10.txt" |> open_in |> IO.read_lines_l)
   in
   List.rev signals;;
 
-let part1 =
-  List.foldi (fun acc i x -> acc + if (i - 20) mod 40 = 0 then i * x else 0) 0 signals
+let () =
+  let ans = List.foldi (fun acc i x -> 
+    if i mod 40 = 0 then Printf.printf "\n";
+    if abs((i mod 40) - x) <= 1 then print_string "##" else print_string "  ";
+    acc + if (i - 20) mod 40 = 0 then i * x else 0) 0 signals in
+    Printf.printf "\npart1 = %d\n" ans
 
-let part2 =
-  let draw i x = if abs (i - x) <= 1 then '#' else ' ' in
-  let draw_line = Fun.compose (List.mapi draw) String.of_list in
-  signals |> List.drop 1 |> List.chunks 40 |> List.map draw_line |> String.concat "\n"
-
-let _ =
-  Printf.printf "part1=%d\npart2=\n%s" part1 part2
