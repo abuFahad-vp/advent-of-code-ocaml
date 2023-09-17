@@ -1,9 +1,9 @@
-# dune exec ./day11.exe
+# dune exec ./day12.exe
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/abu/ocaml_tut/advent/2022
 # Auto-detected concurrency: 2
-$ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_e93a0f_output
+$ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_37adef_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -112,6 +112,6 @@ $ /home/abu/.opam/default/bin/ocamlc.opt -config > /tmp/dune_e93a0f_output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /home/abu/.opam/default/bin/ocamldep.opt -modules -impl day11.ml) > _build/default/.day11.eobjs/dune__exe__Day11.impl.d
-$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .day11.eobjs/byte -I .day11.eobjs/native -I /home/abu/.opam/default/lib/angstrom -I /home/abu/.opam/default/lib/bigstringaf -I /home/abu/.opam/default/lib/containers -I /home/abu/.opam/default/lib/containers/monomorphic -I /home/abu/.opam/default/lib/either -I /home/abu/.opam/default/lib/ocaml/str -I /home/abu/.opam/default/lib/ocaml/unix -I /home/abu/.opam/default/lib/seq -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .day11.eobjs/native/dune__exe__Day11.cmx -c -impl day11.ml)
-$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o day11.exe /home/abu/.opam/default/lib/ocaml/unix/unix.cmxa /home/abu/.opam/default/lib/either/either.cmxa /home/abu/.opam/default/lib/containers/monomorphic/containers_monomorphic.cmxa /home/abu/.opam/default/lib/containers/containers.cmxa /home/abu/.opam/default/lib/ocaml/str/str.cmxa /home/abu/.opam/default/lib/bigstringaf/bigstringaf.cmxa -I /home/abu/.opam/default/lib/bigstringaf /home/abu/.opam/default/lib/angstrom/angstrom.cmxa .day11.eobjs/native/dune__exe.cmx .day11.eobjs/native/dune__exe__Day11.cmx)
+$ (cd _build/default && /home/abu/.opam/default/bin/ocamldep.opt -modules -impl day12.ml) > _build/default/.day12.eobjs/dune__exe__Day12.impl.d
+$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .day12.eobjs/byte -I .day12.eobjs/native -I /home/abu/.opam/default/lib/angstrom -I /home/abu/.opam/default/lib/bigstringaf -I /home/abu/.opam/default/lib/containers -I /home/abu/.opam/default/lib/containers/monomorphic -I /home/abu/.opam/default/lib/either -I /home/abu/.opam/default/lib/ocaml/str -I /home/abu/.opam/default/lib/ocaml/unix -I /home/abu/.opam/default/lib/seq -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .day12.eobjs/native/dune__exe__Day12.cmx -c -impl day12.ml)
+$ (cd _build/default && /home/abu/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o day12.exe /home/abu/.opam/default/lib/ocaml/unix/unix.cmxa /home/abu/.opam/default/lib/either/either.cmxa /home/abu/.opam/default/lib/containers/monomorphic/containers_monomorphic.cmxa /home/abu/.opam/default/lib/containers/containers.cmxa /home/abu/.opam/default/lib/ocaml/str/str.cmxa /home/abu/.opam/default/lib/bigstringaf/bigstringaf.cmxa -I /home/abu/.opam/default/lib/bigstringaf /home/abu/.opam/default/lib/angstrom/angstrom.cmxa .day12.eobjs/native/dune__exe.cmx .day12.eobjs/native/dune__exe__Day12.cmx)
