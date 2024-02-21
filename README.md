@@ -1,5 +1,5 @@
 
-# advent-of-code-ocaml
+# advent-of-code-2022-ocaml
 ## Solutions to advent of code in ocaml
 
 ### usage: 
