@@ -1,6 +1,6 @@
 
 # advent-of-code-2022-ocaml
-## Solutions to advent of code in ocaml
+## Solutions to advent of code 2022 in ocaml
 
 ### usage: 
     cd 2022
